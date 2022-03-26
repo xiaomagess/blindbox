@@ -1,0 +1,6529 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\box.sol": {
+      "lastModificationDate": 1648201268880,
+      "contentHash": "74b144c3f383317da2b93d1104a1acd9",
+      "sourceName": "contracts/box.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./util/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+        "./util/contracts/utils/Counters.sol",
+        "./util/contracts/access/AccessControl.sol",
+        "./diamonds.sol",
+        "./worker.sol",
+        "./hoe.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Box"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC721\\extensions\\ERC721URIStorage.sol": {
+      "lastModificationDate": 1648107435875,
+      "contentHash": "580a443491d9d70eb064b0130fc3cd01",
+      "sourceName": "contracts/util/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721URIStorage"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\Counters.sol": {
+      "lastModificationDate": 1648107435832,
+      "contentHash": "74654e3ae5d7f39555055dfe244dab7a",
+      "sourceName": "contracts/util/contracts/utils/Counters.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Counters"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\access\\AccessControl.sol": {
+      "lastModificationDate": 1648107435820,
+      "contentHash": "76cae8e1eb9c27e818b0b08e1527f731",
+      "sourceName": "contracts/util/contracts/access/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAccessControl.sol",
+        "../utils/Context.sol",
+        "../utils/Strings.sol",
+        "../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\diamonds.sol": {
+      "lastModificationDate": 1648202005568,
+      "contentHash": "d07eb74fd76c776278687822965f2ac3",
+      "sourceName": "contracts/diamonds.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "./util/contracts/token/ERC20/ERC20.sol",
+        "./util/contracts/access/AccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Diamonds"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\worker.sol": {
+      "lastModificationDate": 1648179066677,
+      "contentHash": "6828dc333c1fe76599b09188c641747d",
+      "sourceName": "contracts/worker.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./util/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+        "./util/contracts/utils/Counters.sol",
+        "./util/contracts/access/AccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Worker"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\hoe.sol": {
+      "lastModificationDate": 1648110115281,
+      "contentHash": "c863aeff993d6dd4910aeb0cf3e46946",
+      "sourceName": "contracts/hoe.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./util/contracts/token/ERC721/extensions/ERC721URIStorage.sol",
+        "./util/contracts/utils/Counters.sol",
+        "./util/contracts/access/AccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Hoe"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC721\\ERC721.sol": {
+      "lastModificationDate": 1648107435869,
+      "contentHash": "49295810dc45f300e5f84b4b50d88a59",
+      "sourceName": "contracts/util/contracts/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol",
+        "./IERC721Receiver.sol",
+        "./extensions/IERC721Metadata.sol",
+        "../../utils/Address.sol",
+        "../../utils/Context.sol",
+        "../../utils/Strings.sol",
+        "../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC721\\IERC721.sol": {
+      "lastModificationDate": 1648107435907,
+      "contentHash": "27d219ec6f69478d065fdbfa7931da68",
+      "sourceName": "contracts/util/contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC721\\IERC721Receiver.sol": {
+      "lastModificationDate": 1648107435911,
+      "contentHash": "592df588492d45fdcf46b3cb608c0fbf",
+      "sourceName": "contracts/util/contracts/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC721\\extensions\\IERC721Metadata.sol": {
+      "lastModificationDate": 1648107435910,
+      "contentHash": "efbc0d15b80a74e34dbe8da0f3e879bb",
+      "sourceName": "contracts/util/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\Address.sol": {
+      "lastModificationDate": 1648107435822,
+      "contentHash": "ad714a6368ee7d43cded6bbe8af0b155",
+      "sourceName": "contracts/util/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\Context.sol": {
+      "lastModificationDate": 1648107435832,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "contracts/util/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\Strings.sol": {
+      "lastModificationDate": 1648107435936,
+      "contentHash": "9c54c6c065d9e590fdcdd72c451425b9",
+      "sourceName": "contracts/util/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\introspection\\ERC165.sol": {
+      "lastModificationDate": 1648107435854,
+      "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
+      "sourceName": "contracts/util/contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\introspection\\IERC165.sol": {
+      "lastModificationDate": 1648107435901,
+      "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
+      "sourceName": "contracts/util/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\access\\IAccessControl.sol": {
+      "lastModificationDate": 1648107435894,
+      "contentHash": "57c84298234411cea19c7c284d86be8b",
+      "sourceName": "contracts/util/contracts/access/IAccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAccessControl"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC20\\ERC20.sol": {
+      "lastModificationDate": 1648107435859,
+      "contentHash": "bab063ddd80e9cc9e313361fef7ef07f",
+      "sourceName": "contracts/util/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC20\\IERC20.sol": {
+      "lastModificationDate": 1648107435904,
+      "contentHash": "a44d1a099633876550ad2476b21bafbe",
+      "sourceName": "contracts/util/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC20\\extensions\\IERC20Metadata.sol": {
+      "lastModificationDate": 1648107435904,
+      "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
+      "sourceName": "contracts/util/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\market_hoe.sol": {
+      "lastModificationDate": 1648110240897,
+      "contentHash": "66e2c21764132edf64ef832a05f64c97",
+      "sourceName": "contracts/market_hoe.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./diamonds.sol",
+        "./hoe.sol",
+        "./util/contracts/access/Ownable.sol",
+        "./util/safemath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MarketHoe"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\access\\Ownable.sol": {
+      "lastModificationDate": 1648107435922,
+      "contentHash": "8398972af73b4e9e5ff3b31cad86234f",
+      "sourceName": "contracts/util/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\safemath.sol": {
+      "lastModificationDate": 1648110213745,
+      "contentHash": "a6a9d6c1f662e922b82c1ba4d81cdd48",
+      "sourceName": "contracts/util/safemath.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\market_worker.sol": {
+      "lastModificationDate": 1648110240476,
+      "contentHash": "a1c56f15df803c91bb7a59b42171b02d",
+      "sourceName": "contracts/market_worker.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./diamonds.sol",
+        "./worker.sol",
+        "./util/contracts/access/Ownable.sol",
+        "./util/safemath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MarketWorker"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\escrow\\Escrow.sol": {
+      "lastModificationDate": 1648107435884,
+      "contentHash": "d0b182675ed7481cb6e1a1a226a47f0f",
+      "sourceName": "contracts/util/contracts/utils/escrow/Escrow.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../access/Ownable.sol",
+        "../Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Escrow"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\escrow\\ConditionalEscrow.sol": {
+      "lastModificationDate": 1648107435832,
+      "contentHash": "ed8802b28f8eab3257dc05b5b09e5c5d",
+      "sourceName": "contracts/util/contracts/utils/escrow/ConditionalEscrow.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Escrow.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ConditionalEscrow"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\escrow\\RefundEscrow.sol": {
+      "lastModificationDate": 1648107435928,
+      "contentHash": "aee62e265ecc9a3b5f03a79e34b89158",
+      "sourceName": "contracts/util/contracts/utils/escrow/RefundEscrow.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ConditionalEscrow.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "RefundEscrow"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\Multicall.sol": {
+      "lastModificationDate": 1648107435922,
+      "contentHash": "8a997d859de7e871118021136bb5094e",
+      "sourceName": "contracts/util/contracts/utils/Multicall.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Multicall"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\cryptography\\SignatureChecker.sol": {
+      "lastModificationDate": 1648107435934,
+      "contentHash": "a6c043c18ceaf0499c284c8b65b313f4",
+      "sourceName": "contracts/util/contracts/utils/cryptography/SignatureChecker.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ECDSA.sol",
+        "../Address.sol",
+        "../../interfaces/IERC1271.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SignatureChecker"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\cryptography\\ECDSA.sol": {
+      "lastModificationDate": 1648107435841,
+      "contentHash": "482bcc512029ecf51ca4ae85cf4667c7",
+      "sourceName": "contracts/util/contracts/utils/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC1271.sol": {
+      "lastModificationDate": 1648107435898,
+      "contentHash": "8fe867b95c856b204f954a1910e28a1e",
+      "sourceName": "contracts/util/contracts/interfaces/IERC1271.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1271"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\metatx\\MinimalForwarder.sol": {
+      "lastModificationDate": 1648107435922,
+      "contentHash": "09108ffd4f8926d056d6efd660ddde57",
+      "sourceName": "contracts/util/contracts/metatx/MinimalForwarder.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/cryptography/ECDSA.sol",
+        "../utils/cryptography/draft-EIP712.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MinimalForwarder"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\cryptography\\draft-EIP712.sol": {
+      "lastModificationDate": 1648107435835,
+      "contentHash": "161aae4dc1450371d0f324488f66a9cf",
+      "sourceName": "contracts/util/contracts/utils/cryptography/draft-EIP712.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ECDSA.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EIP712"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\governance\\utils\\Votes.sol": {
+      "lastModificationDate": 1648107435939,
+      "contentHash": "4bd24d6f63bd0f8e24225b033c5b9b71",
+      "sourceName": "contracts/util/contracts/governance/utils/Votes.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "../../utils/Counters.sol",
+        "../../utils/Checkpoints.sol",
+        "../../utils/cryptography/draft-EIP712.sol",
+        "./IVotes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Votes"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\Checkpoints.sol": {
+      "lastModificationDate": 1648107435829,
+      "contentHash": "6986896416b1f89cb9ddd3bafe0bf8d1",
+      "sourceName": "contracts/util/contracts/utils/Checkpoints.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./math/Math.sol",
+        "./math/SafeCast.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Checkpoints"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\governance\\utils\\IVotes.sol": {
+      "lastModificationDate": 1648107435919,
+      "contentHash": "a036d40989f21d08bb990e68d0088fa1",
+      "sourceName": "contracts/util/contracts/governance/utils/IVotes.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IVotes"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\math\\Math.sol": {
+      "lastModificationDate": 1648107435921,
+      "contentHash": "339b9793dcbd7b5d55af725ef47de74c",
+      "sourceName": "contracts/util/contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\math\\SafeCast.sol": {
+      "lastModificationDate": 1648107435929,
+      "contentHash": "cd91252bfcbee6eaba8f5144f504583c",
+      "sourceName": "contracts/util/contracts/utils/math/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC721\\extensions\\draft-ERC721Votes.sol": {
+      "lastModificationDate": 1648107435839,
+      "contentHash": "a141f200839568a6a5326d19a47f8714",
+      "sourceName": "contracts/util/contracts/token/ERC721/extensions/draft-ERC721Votes.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "../../../governance/utils/Votes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Votes"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC721\\presets\\ERC721PresetMinterPauserAutoId.sol": {
+      "lastModificationDate": 1648107435874,
+      "contentHash": "27d2c7c209f2fae42c6b90832f2669aa",
+      "sourceName": "contracts/util/contracts/token/ERC721/presets/ERC721PresetMinterPauserAutoId.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "../extensions/ERC721Enumerable.sol",
+        "../extensions/ERC721Burnable.sol",
+        "../extensions/ERC721Pausable.sol",
+        "../../../access/AccessControlEnumerable.sol",
+        "../../../utils/Context.sol",
+        "../../../utils/Counters.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721PresetMinterPauserAutoId"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC721\\extensions\\ERC721Enumerable.sol": {
+      "lastModificationDate": 1648107435870,
+      "contentHash": "88095889e59d16821879a8083f906503",
+      "sourceName": "contracts/util/contracts/token/ERC721/extensions/ERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "./IERC721Enumerable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Enumerable"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC721\\extensions\\ERC721Burnable.sol": {
+      "lastModificationDate": 1648107435869,
+      "contentHash": "7bbd5ca6e396f0ad628cfbf0031d9e32",
+      "sourceName": "contracts/util/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "../../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Burnable"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC721\\extensions\\ERC721Pausable.sol": {
+      "lastModificationDate": 1648107435873,
+      "contentHash": "2bc2d361b7e7bda979021da66e1696af",
+      "sourceName": "contracts/util/contracts/token/ERC721/extensions/ERC721Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "../../../security/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Pausable"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\access\\AccessControlEnumerable.sol": {
+      "lastModificationDate": 1648107435821,
+      "contentHash": "b6d9b165dc57e9ad8153bdca05c783a4",
+      "sourceName": "contracts/util/contracts/access/AccessControlEnumerable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAccessControlEnumerable.sol",
+        "./AccessControl.sol",
+        "../utils/structs/EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControlEnumerable"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC721\\extensions\\IERC721Enumerable.sol": {
+      "lastModificationDate": 1648107435908,
+      "contentHash": "f4dd06783f321aa26179bc2b6e361c29",
+      "sourceName": "contracts/util/contracts/token/ERC721/extensions/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\security\\Pausable.sol": {
+      "lastModificationDate": 1648107435923,
+      "contentHash": "9c2dccab8e3a43a18c41e358763fe4d8",
+      "sourceName": "contracts/util/contracts/security/Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Pausable"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\access\\IAccessControlEnumerable.sol": {
+      "lastModificationDate": 1648107435894,
+      "contentHash": "4e71cc90682e109e999ce2bd329f6572",
+      "sourceName": "contracts/util/contracts/access/IAccessControlEnumerable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAccessControlEnumerable"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\structs\\EnumerableSet.sol": {
+      "lastModificationDate": 1648107435843,
+      "contentHash": "b8070bbbb327a49a4d37f5c590b38238",
+      "sourceName": "contracts/util/contracts/utils/structs/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC20\\extensions\\ERC20Snapshot.sol": {
+      "lastModificationDate": 1648107435863,
+      "contentHash": "0db6a86f6fc065db1a0548ee5fe77a69",
+      "sourceName": "contracts/util/contracts/token/ERC20/extensions/ERC20Snapshot.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../../../utils/Arrays.sol",
+        "../../../utils/Counters.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Snapshot"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\Arrays.sol": {
+      "lastModificationDate": 1648107435823,
+      "contentHash": "2bd89f9eb95c317b3b21cc83fde01a32",
+      "sourceName": "contracts/util/contracts/utils/Arrays.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Arrays"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC20\\extensions\\ERC20Votes.sol": {
+      "lastModificationDate": 1648107435865,
+      "contentHash": "d750921452f3bf2ab170f55cf4f5dc71",
+      "sourceName": "contracts/util/contracts/token/ERC20/extensions/ERC20Votes.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./draft-ERC20Permit.sol",
+        "../../../utils/math/Math.sol",
+        "../../../governance/utils/IVotes.sol",
+        "../../../utils/math/SafeCast.sol",
+        "../../../utils/cryptography/ECDSA.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Votes"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC20\\extensions\\draft-ERC20Permit.sol": {
+      "lastModificationDate": 1648107435837,
+      "contentHash": "4e2473d86be8e737a3ba1c38f36a2aab",
+      "sourceName": "contracts/util/contracts/token/ERC20/extensions/draft-ERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./draft-IERC20Permit.sol",
+        "../ERC20.sol",
+        "../../../utils/cryptography/draft-EIP712.sol",
+        "../../../utils/cryptography/ECDSA.sol",
+        "../../../utils/Counters.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Permit"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC20\\extensions\\draft-IERC20Permit.sol": {
+      "lastModificationDate": 1648107435841,
+      "contentHash": "fb77f144244b9ab12533aa6ce85ef8c5",
+      "sourceName": "contracts/util/contracts/token/ERC20/extensions/draft-IERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Permit"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\governance\\extensions\\GovernorVotes.sol": {
+      "lastModificationDate": 1648107435892,
+      "contentHash": "232d8cac97c441c8c177aaeeccc94481",
+      "sourceName": "contracts/util/contracts/governance/extensions/GovernorVotes.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governor.sol",
+        "../utils/IVotes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorVotes"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\governance\\Governor.sol": {
+      "lastModificationDate": 1648107435885,
+      "contentHash": "28514954183285e570ab4889d2dbfe54",
+      "sourceName": "contracts/util/contracts/governance/Governor.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/cryptography/ECDSA.sol",
+        "../utils/cryptography/draft-EIP712.sol",
+        "../utils/introspection/ERC165.sol",
+        "../utils/math/SafeCast.sol",
+        "../utils/Address.sol",
+        "../utils/Context.sol",
+        "../utils/Timers.sol",
+        "./IGovernor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Governor"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\Timers.sol": {
+      "lastModificationDate": 1648107435936,
+      "contentHash": "ae135102abee8b2fc88eed09a40cdb4c",
+      "sourceName": "contracts/util/contracts/utils/Timers.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Timers"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\governance\\IGovernor.sol": {
+      "lastModificationDate": 1648107435916,
+      "contentHash": "1a5be50c2b8436df5ec78772626c13e9",
+      "sourceName": "contracts/util/contracts/governance/IGovernor.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IGovernor"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\governance\\extensions\\GovernorVotesQuorumFraction.sol": {
+      "lastModificationDate": 1648107435894,
+      "contentHash": "b346cb21204465106e3d5ea7b6264ee9",
+      "sourceName": "contracts/util/contracts/governance/extensions/GovernorVotesQuorumFraction.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./GovernorVotes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorVotesQuorumFraction"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\governance\\extensions\\GovernorVotesComp.sol": {
+      "lastModificationDate": 1648107435893,
+      "contentHash": "b73763c7c121eec0264be012e085585b",
+      "sourceName": "contracts/util/contracts/governance/extensions/GovernorVotesComp.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governor.sol",
+        "../../token/ERC20/extensions/ERC20VotesComp.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorVotesComp"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC20\\extensions\\ERC20VotesComp.sol": {
+      "lastModificationDate": 1648107435864,
+      "contentHash": "85de097d4da905cf320e89d73840291a",
+      "sourceName": "contracts/util/contracts/token/ERC20/extensions/ERC20VotesComp.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20Votes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20VotesComp"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\governance\\extensions\\GovernorTimelockControl.sol": {
+      "lastModificationDate": 1648107435892,
+      "contentHash": "cb4dc50e128ed332c48a1c7d06b4e879",
+      "sourceName": "contracts/util/contracts/governance/extensions/GovernorTimelockControl.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IGovernorTimelock.sol",
+        "../Governor.sol",
+        "../TimelockController.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorTimelockControl"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\governance\\extensions\\IGovernorTimelock.sol": {
+      "lastModificationDate": 1648107435916,
+      "contentHash": "eebb17e144c4fd58549d815db19552da",
+      "sourceName": "contracts/util/contracts/governance/extensions/IGovernorTimelock.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IGovernor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IGovernorTimelock"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\governance\\TimelockController.sol": {
+      "lastModificationDate": 1648107435936,
+      "contentHash": "59f5eb55cde7d6d3ae62c45480aff256",
+      "sourceName": "contracts/util/contracts/governance/TimelockController.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/AccessControl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TimelockController"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC20\\presets\\ERC20PresetMinterPauser.sol": {
+      "lastModificationDate": 1648107435862,
+      "contentHash": "ca6cd8d752c4e75efa2a15734be0cb94",
+      "sourceName": "contracts/util/contracts/token/ERC20/presets/ERC20PresetMinterPauser.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../extensions/ERC20Burnable.sol",
+        "../extensions/ERC20Pausable.sol",
+        "../../../access/AccessControlEnumerable.sol",
+        "../../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20PresetMinterPauser"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC20\\extensions\\ERC20Burnable.sol": {
+      "lastModificationDate": 1648107435859,
+      "contentHash": "a1c7f80ae26f5b2d7d563475627fbf25",
+      "sourceName": "contracts/util/contracts/token/ERC20/extensions/ERC20Burnable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Burnable"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC20\\extensions\\ERC20Pausable.sol": {
+      "lastModificationDate": 1648107435860,
+      "contentHash": "ab4babe7912604097ae769a62fa08506",
+      "sourceName": "contracts/util/contracts/token/ERC20/extensions/ERC20Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../../../security/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Pausable"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC777\\ERC777.sol": {
+      "lastModificationDate": 1648107435876,
+      "contentHash": "aa7ff793397b95dbb6c928ded790927b",
+      "sourceName": "contracts/util/contracts/token/ERC777/ERC777.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC777.sol",
+        "./IERC777Recipient.sol",
+        "./IERC777Sender.sol",
+        "../ERC20/IERC20.sol",
+        "../../utils/Address.sol",
+        "../../utils/Context.sol",
+        "../../utils/introspection/IERC1820Registry.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC777"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC777\\IERC777.sol": {
+      "lastModificationDate": 1648107435912,
+      "contentHash": "577d03e8d175b2f807063648ac4302ad",
+      "sourceName": "contracts/util/contracts/token/ERC777/IERC777.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC777"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC777\\IERC777Recipient.sol": {
+      "lastModificationDate": 1648107435914,
+      "contentHash": "268af1696d7a83a7e78a1a8f5ba1c685",
+      "sourceName": "contracts/util/contracts/token/ERC777/IERC777Recipient.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC777Recipient"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC777\\IERC777Sender.sol": {
+      "lastModificationDate": 1648107435915,
+      "contentHash": "7c1ce5bc5bc5f57fe7106ba767063e08",
+      "sourceName": "contracts/util/contracts/token/ERC777/IERC777Sender.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC777Sender"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\introspection\\IERC1820Registry.sol": {
+      "lastModificationDate": 1648107435903,
+      "contentHash": "f584744ea68647073c73fe42d509a3e1",
+      "sourceName": "contracts/util/contracts/utils/introspection/IERC1820Registry.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1820Registry"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC777\\presets\\ERC777PresetFixedSupply.sol": {
+      "lastModificationDate": 1648107435884,
+      "contentHash": "cf632c608a0fc89ebfcd9870cb7e6ca2",
+      "sourceName": "contracts/util/contracts/token/ERC777/presets/ERC777PresetFixedSupply.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC777.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC777PresetFixedSupply"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC1820Registry.sol": {
+      "lastModificationDate": 1648107435903,
+      "contentHash": "fee82324a47df8d208c5389f695afab9",
+      "sourceName": "contracts/util/contracts/interfaces/IERC1820Registry.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/IERC1820Registry.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC20.sol": {
+      "lastModificationDate": 1648107435903,
+      "contentHash": "d151fbfe7939989b9acf22797b32058b",
+      "sourceName": "contracts/util/contracts/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC1363.sol": {
+      "lastModificationDate": 1648107435899,
+      "contentHash": "acec8cadeb2b66b07429c854a788a555",
+      "sourceName": "contracts/util/contracts/interfaces/IERC1363.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1363"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC165.sol": {
+      "lastModificationDate": 1648107435900,
+      "contentHash": "ee9624272968c23d93d4c2e39f06e6e2",
+      "sourceName": "contracts/util/contracts/interfaces/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC2981.sol": {
+      "lastModificationDate": 1648107435905,
+      "contentHash": "f9d0c9d72cbaa5a4e76fa4cfa5fc5ff9",
+      "sourceName": "contracts/util/contracts/interfaces/IERC2981.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC2981"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\common\\ERC2981.sol": {
+      "lastModificationDate": 1648107435867,
+      "contentHash": "6c248867533a1681002eb524a1c41eb0",
+      "sourceName": "contracts/util/contracts/token/common/ERC2981.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/IERC2981.sol",
+        "../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC2981"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC721\\extensions\\ERC721Royalty.sol": {
+      "lastModificationDate": 1648107435875,
+      "contentHash": "538c93f1c25e40421fbe0c2c820c2fbe",
+      "sourceName": "contracts/util/contracts/token/ERC721/extensions/ERC721Royalty.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "../../common/ERC2981.sol",
+        "../../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Royalty"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\introspection\\ERC165Storage.sol": {
+      "lastModificationDate": 1648107435856,
+      "contentHash": "a391733d3f579314de328ba879bc4f2d",
+      "sourceName": "contracts/util/contracts/utils/introspection/ERC165Storage.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165Storage"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC1155\\utils\\ERC1155Receiver.sol": {
+      "lastModificationDate": 1648107435852,
+      "contentHash": "55b180cf664783e9a2baac20e82683fb",
+      "sourceName": "contracts/util/contracts/token/ERC1155/utils/ERC1155Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC1155Receiver.sol",
+        "../../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Receiver"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC1155\\IERC1155Receiver.sol": {
+      "lastModificationDate": 1648107435897,
+      "contentHash": "9f8822b72fe2702979e40160cb6d9636",
+      "sourceName": "contracts/util/contracts/token/ERC1155/IERC1155Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155Receiver"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC1155\\ERC1155.sol": {
+      "lastModificationDate": 1648107435845,
+      "contentHash": "1d68a32647e54f6acd6ff471d940ef4c",
+      "sourceName": "contracts/util/contracts/token/ERC1155/ERC1155.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1155.sol",
+        "./IERC1155Receiver.sol",
+        "./extensions/IERC1155MetadataURI.sol",
+        "../../utils/Address.sol",
+        "../../utils/Context.sol",
+        "../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC1155\\IERC1155.sol": {
+      "lastModificationDate": 1648107435895,
+      "contentHash": "59e1bc5713fdebc7f821dc52f4d3e0ef",
+      "sourceName": "contracts/util/contracts/token/ERC1155/IERC1155.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC1155\\extensions\\IERC1155MetadataURI.sol": {
+      "lastModificationDate": 1648107435896,
+      "contentHash": "9148c2e10c4efb12c71a7f080da5559b",
+      "sourceName": "contracts/util/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155MetadataURI"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC1155\\presets\\ERC1155PresetMinterPauser.sol": {
+      "lastModificationDate": 1648107435852,
+      "contentHash": "ce9333438d295d2c4bebc7951ad33d93",
+      "sourceName": "contracts/util/contracts/token/ERC1155/presets/ERC1155PresetMinterPauser.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1155.sol",
+        "../extensions/ERC1155Burnable.sol",
+        "../extensions/ERC1155Pausable.sol",
+        "../../../access/AccessControlEnumerable.sol",
+        "../../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155PresetMinterPauser"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC1155\\extensions\\ERC1155Burnable.sol": {
+      "lastModificationDate": 1648107435848,
+      "contentHash": "b9f23167c71a0ebb43ef5915b463a264",
+      "sourceName": "contracts/util/contracts/token/ERC1155/extensions/ERC1155Burnable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Burnable"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC1155\\extensions\\ERC1155Pausable.sol": {
+      "lastModificationDate": 1648107435850,
+      "contentHash": "8c76f015a31a093020b83ba53a33c84d",
+      "sourceName": "contracts/util/contracts/token/ERC1155/extensions/ERC1155Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1155.sol",
+        "../../../security/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Pausable"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC20\\extensions\\ERC20Wrapper.sol": {
+      "lastModificationDate": 1648107435865,
+      "contentHash": "74fa026199b12422b3b1e825bc6da398",
+      "sourceName": "contracts/util/contracts/token/ERC20/extensions/ERC20Wrapper.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../utils/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Wrapper"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC20\\utils\\SafeERC20.sol": {
+      "lastModificationDate": 1648107435933,
+      "contentHash": "76814c83c32552ed2b521c816b4d801a",
+      "sourceName": "contracts/util/contracts/token/ERC20/utils/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol",
+        "../../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC20\\utils\\TokenTimelock.sol": {
+      "lastModificationDate": 1648107435937,
+      "contentHash": "5d2b54b53436cb1d51e9aed8f2b27982",
+      "sourceName": "contracts/util/contracts/token/ERC20/utils/TokenTimelock.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TokenTimelock"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\finance\\VestingWallet.sol": {
+      "lastModificationDate": 1648107435939,
+      "contentHash": "70880040ed05fbe6aa93b225cae6031a",
+      "sourceName": "contracts/util/contracts/finance/VestingWallet.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/utils/SafeERC20.sol",
+        "../utils/Address.sol",
+        "../utils/Context.sol",
+        "../utils/math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "VestingWallet"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\finance\\PaymentSplitter.sol": {
+      "lastModificationDate": 1648107435924,
+      "contentHash": "6f4509765ae026e31e8e4f0fb8f1f80f",
+      "sourceName": "contracts/util/contracts/finance/PaymentSplitter.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/utils/SafeERC20.sol",
+        "../utils/Address.sol",
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PaymentSplitter"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC20\\extensions\\ERC20FlashMint.sol": {
+      "lastModificationDate": 1648107435860,
+      "contentHash": "814495161791b9cd7d533ff051913e5d",
+      "sourceName": "contracts/util/contracts/token/ERC20/extensions/ERC20FlashMint.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../../interfaces/IERC3156.sol",
+        "../ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20FlashMint"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC3156.sol": {
+      "lastModificationDate": 1648107435905,
+      "contentHash": "8a4addf833379ccc6911f847b308332f",
+      "sourceName": "contracts/util/contracts/interfaces/IERC3156.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC3156FlashBorrower.sol",
+        "./IERC3156FlashLender.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC3156FlashBorrower.sol": {
+      "lastModificationDate": 1648107435906,
+      "contentHash": "6317d0dd1a63dfc0a295b00173c76f95",
+      "sourceName": "contracts/util/contracts/interfaces/IERC3156FlashBorrower.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC3156FlashBorrower"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC3156FlashLender.sol": {
+      "lastModificationDate": 1648107435906,
+      "contentHash": "9e16b4d269b399e8ab6342e0cf8a2edd",
+      "sourceName": "contracts/util/contracts/interfaces/IERC3156FlashLender.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC3156FlashBorrower.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC3156FlashLender"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC20\\extensions\\ERC20Capped.sol": {
+      "lastModificationDate": 1648107435860,
+      "contentHash": "da89e343119284763a5a135243cdb338",
+      "sourceName": "contracts/util/contracts/token/ERC20/extensions/ERC20Capped.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Capped"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC20\\presets\\ERC20PresetFixedSupply.sol": {
+      "lastModificationDate": 1648107435862,
+      "contentHash": "d4d35c0977f3c87ab399a75a45d6fc19",
+      "sourceName": "contracts/util/contracts/token/ERC20/presets/ERC20PresetFixedSupply.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../extensions/ERC20Burnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20PresetFixedSupply"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\draft-IERC2612.sol": {
+      "lastModificationDate": 1648107435841,
+      "contentHash": "ad2177bf228c4a10bd94423ed7b1c67a",
+      "sourceName": "contracts/util/contracts/interfaces/draft-IERC2612.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/extensions/draft-IERC20Permit.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC2612"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC20Metadata.sol": {
+      "lastModificationDate": 1648107435904,
+      "contentHash": "5f6b568ff33d29c2a468a48e4d2bb0f4",
+      "sourceName": "contracts/util/contracts/interfaces/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/extensions/IERC20Metadata.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\game.sol": {
+      "lastModificationDate": 1648110110860,
+      "contentHash": "670aaafda5a84f2b26d7108f9dc9d7e1",
+      "sourceName": "contracts/game.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./diamonds.sol",
+        "./worker.sol",
+        "./hoe.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Game"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC1155\\extensions\\ERC1155Supply.sol": {
+      "lastModificationDate": 1648107435853,
+      "contentHash": "f9155e286006f035a9a68ad49241dd75",
+      "sourceName": "contracts/util/contracts/token/ERC1155/extensions/ERC1155Supply.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Supply"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\introspection\\ERC165Checker.sol": {
+      "lastModificationDate": 1648107435855,
+      "contentHash": "1abe3767b27223b96a265645cb2a56e3",
+      "sourceName": "contracts/util/contracts/utils/introspection/ERC165Checker.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165Checker"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC721Enumerable.sol": {
+      "lastModificationDate": 1648107435908,
+      "contentHash": "ff727125a84ba8d0dd642f6ab0632435",
+      "sourceName": "contracts/util/contracts/interfaces/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/extensions/IERC721Enumerable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC721.sol": {
+      "lastModificationDate": 1648107435907,
+      "contentHash": "e6da7798a8c22c5043cc42d64a2a8f80",
+      "sourceName": "contracts/util/contracts/interfaces/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC721Metadata.sol": {
+      "lastModificationDate": 1648107435909,
+      "contentHash": "d228683ef3a0f519456720463403ced6",
+      "sourceName": "contracts/util/contracts/interfaces/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/extensions/IERC721Metadata.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC1155.sol": {
+      "lastModificationDate": 1648107435895,
+      "contentHash": "f646f2b291e7c83dcc7f1c6c7d1ece30",
+      "sourceName": "contracts/util/contracts/interfaces/IERC1155.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC1155/IERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC1155MetadataURI.sol": {
+      "lastModificationDate": 1648107435896,
+      "contentHash": "bc1c98271c8b14d98b8caf09250dd039",
+      "sourceName": "contracts/util/contracts/interfaces/IERC1155MetadataURI.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC1155/extensions/IERC1155MetadataURI.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC1155Receiver.sol": {
+      "lastModificationDate": 1648107435897,
+      "contentHash": "a80dbc3947556c57c569cd81aa255f10",
+      "sourceName": "contracts/util/contracts/interfaces/IERC1155Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC1155/IERC1155Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC1155\\utils\\ERC1155Holder.sol": {
+      "lastModificationDate": 1648107435850,
+      "contentHash": "88079762e28b246888129028f757e047",
+      "sourceName": "contracts/util/contracts/token/ERC1155/utils/ERC1155Holder.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC1155Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Holder"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\governance\\compatibility\\IGovernorCompatibilityBravo.sol": {
+      "lastModificationDate": 1648107435916,
+      "contentHash": "150a6426dc55ba789e76389d6893f908",
+      "sourceName": "contracts/util/contracts/governance/compatibility/IGovernorCompatibilityBravo.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IGovernor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IGovernorCompatibilityBravo"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\governance\\compatibility\\GovernorCompatibilityBravo.sol": {
+      "lastModificationDate": 1648107435887,
+      "contentHash": "d02562393627c383df919c9fccf2c5f6",
+      "sourceName": "contracts/util/contracts/governance/compatibility/GovernorCompatibilityBravo.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Counters.sol",
+        "../../utils/math/SafeCast.sol",
+        "../extensions/IGovernorTimelock.sol",
+        "../Governor.sol",
+        "./IGovernorCompatibilityBravo.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorCompatibilityBravo"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\governance\\extensions\\GovernorTimelockCompound.sol": {
+      "lastModificationDate": 1648107435891,
+      "contentHash": "787d026dd763321c233bdd5245fec544",
+      "sourceName": "contracts/util/contracts/governance/extensions/GovernorTimelockCompound.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IGovernorTimelock.sol",
+        "../Governor.sol",
+        "../../utils/math/SafeCast.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorTimelockCompound",
+        "ICompoundTimelock"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC777Sender.sol": {
+      "lastModificationDate": 1648107435914,
+      "contentHash": "e573734b8269ff2e407c505ea6fa4474",
+      "sourceName": "contracts/util/contracts/interfaces/IERC777Sender.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC777/IERC777Sender.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC777Recipient.sol": {
+      "lastModificationDate": 1648107435912,
+      "contentHash": "5cb82721cc0841a27ae151e7f7b268e1",
+      "sourceName": "contracts/util/contracts/interfaces/IERC777Recipient.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC777/IERC777Recipient.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC777.sol": {
+      "lastModificationDate": 1648107435911,
+      "contentHash": "6009e31d3e8cbdc6831fc5d43e99701c",
+      "sourceName": "contracts/util/contracts/interfaces/IERC777.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC777/IERC777.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\metatx\\ERC2771Context.sol": {
+      "lastModificationDate": 1648107435866,
+      "contentHash": "cc84e248c6b15e23709c7b3b60619cf3",
+      "sourceName": "contracts/util/contracts/metatx/ERC2771Context.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "ERC2771Context"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\structs\\EnumerableMap.sol": {
+      "lastModificationDate": 1648107435842,
+      "contentHash": "1bca902345f0e6f88ca41adc097ef42f",
+      "sourceName": "contracts/util/contracts/utils/structs/EnumerableMap.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableMap"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\governance\\extensions\\GovernorSettings.sol": {
+      "lastModificationDate": 1648107435890,
+      "contentHash": "2c6e87fa9b63c7ef8579eb4ae937d4c2",
+      "sourceName": "contracts/util/contracts/governance/extensions/GovernorSettings.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorSettings"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\governance\\extensions\\GovernorProposalThreshold.sol": {
+      "lastModificationDate": 1648107435890,
+      "contentHash": "badf0ac3dc5335b05d84dab6e58a9d6e",
+      "sourceName": "contracts/util/contracts/governance/extensions/GovernorProposalThreshold.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorProposalThreshold"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\governance\\extensions\\GovernorPreventLateQuorum.sol": {
+      "lastModificationDate": 1648107435890,
+      "contentHash": "e5d5c0d6b8f9efd8d6dc7730ba8f5a2a",
+      "sourceName": "contracts/util/contracts/governance/extensions/GovernorPreventLateQuorum.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governor.sol",
+        "../../utils/math/Math.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorPreventLateQuorum"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\governance\\extensions\\GovernorCountingSimple.sol": {
+      "lastModificationDate": 1648107435889,
+      "contentHash": "ea8f93bb65eeed458767a28c233ed3ac",
+      "sourceName": "contracts/util/contracts/governance/extensions/GovernorCountingSimple.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "GovernorCountingSimple"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\token\\ERC721\\utils\\ERC721Holder.sol": {
+      "lastModificationDate": 1648107435872,
+      "contentHash": "54062ff887823a306b33ea6494a220bc",
+      "sourceName": "contracts/util/contracts/token/ERC721/utils/ERC721Holder.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Holder"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC721Receiver.sol": {
+      "lastModificationDate": 1648107435910,
+      "contentHash": "04c99e0f7cc521daff42ecd8e8f14877",
+      "sourceName": "contracts/util/contracts/interfaces/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721/IERC721Receiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\proxy\\utils\\Initializable.sol": {
+      "lastModificationDate": 1648107435918,
+      "contentHash": "16c039b1a7b7e924214b44f577e3c636",
+      "sourceName": "contracts/util/contracts/proxy/utils/Initializable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\proxy\\beacon\\UpgradeableBeacon.sol": {
+      "lastModificationDate": 1648107435938,
+      "contentHash": "8ffefb755605824cf730ce4092b2f581",
+      "sourceName": "contracts/util/contracts/proxy/beacon/UpgradeableBeacon.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IBeacon.sol",
+        "../../access/Ownable.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UpgradeableBeacon"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\proxy\\beacon\\IBeacon.sol": {
+      "lastModificationDate": 1648107435895,
+      "contentHash": "b6bd23bf19e90b771337037706470933",
+      "sourceName": "contracts/util/contracts/proxy/beacon/IBeacon.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IBeacon"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\proxy\\ERC1967\\ERC1967Upgrade.sol": {
+      "lastModificationDate": 1648107435858,
+      "contentHash": "6baa887a798e95b14f34e093f117e9b2",
+      "sourceName": "contracts/util/contracts/proxy/ERC1967/ERC1967Upgrade.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../beacon/IBeacon.sol",
+        "../../interfaces/draft-IERC1822.sol",
+        "../../utils/Address.sol",
+        "../../utils/StorageSlot.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.2"
+      ],
+      "artifacts": [
+        "ERC1967Upgrade"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\draft-IERC1822.sol": {
+      "lastModificationDate": 1648107435841,
+      "contentHash": "2858d98e74e67987ec81b39605230b74",
+      "sourceName": "contracts/util/contracts/interfaces/draft-IERC1822.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1822Proxiable"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\StorageSlot.sol": {
+      "lastModificationDate": 1648107435935,
+      "contentHash": "187a01c1e4e638014509dfee3ac6faa9",
+      "sourceName": "contracts/util/contracts/utils/StorageSlot.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "StorageSlot"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\proxy\\utils\\UUPSUpgradeable.sol": {
+      "lastModificationDate": 1648107435938,
+      "contentHash": "5e95368c9b763cfa31ba0fe1309acc60",
+      "sourceName": "contracts/util/contracts/proxy/utils/UUPSUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/draft-IERC1822.sol",
+        "../ERC1967/ERC1967Upgrade.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UUPSUpgradeable"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\proxy\\ERC1967\\ERC1967Proxy.sol": {
+      "lastModificationDate": 1648107435858,
+      "contentHash": "524a6c6f00b809b1184050dcc9e131d8",
+      "sourceName": "contracts/util/contracts/proxy/ERC1967/ERC1967Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Proxy.sol",
+        "./ERC1967Upgrade.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1967Proxy"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\proxy\\Proxy.sol": {
+      "lastModificationDate": 1648107435924,
+      "contentHash": "64bbdea195e6365927334efd0fc13255",
+      "sourceName": "contracts/util/contracts/proxy/Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\proxy\\transparent\\TransparentUpgradeableProxy.sol": {
+      "lastModificationDate": 1648107435938,
+      "contentHash": "433af24ebe64e49e21ea173b3744af6c",
+      "sourceName": "contracts/util/contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC1967/ERC1967Proxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TransparentUpgradeableProxy"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\proxy\\transparent\\ProxyAdmin.sol": {
+      "lastModificationDate": 1648107435927,
+      "contentHash": "a947492251ac15d6bfd899c9fdb4d82b",
+      "sourceName": "contracts/util/contracts/proxy/transparent/ProxyAdmin.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./TransparentUpgradeableProxy.sol",
+        "../../access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ProxyAdmin"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\proxy\\beacon\\BeaconProxy.sol": {
+      "lastModificationDate": 1648107435826,
+      "contentHash": "0d71075819600720f2c99ed4b31d88e0",
+      "sourceName": "contracts/util/contracts/proxy/beacon/BeaconProxy.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IBeacon.sol",
+        "../Proxy.sol",
+        "../ERC1967/ERC1967Upgrade.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BeaconProxy"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\security\\PullPayment.sol": {
+      "lastModificationDate": 1648107435927,
+      "contentHash": "43e2639a67e1d791ff6e877e8b602669",
+      "sourceName": "contracts/util/contracts/security/PullPayment.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/escrow/Escrow.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PullPayment"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\hello.sol": {
+      "lastModificationDate": 1648110110895,
+      "contentHash": "5820350518af752b8efbce54157d8cb7",
+      "sourceName": "contracts/hello.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Hello"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\test.sol": {
+      "lastModificationDate": 1647589527144,
+      "contentHash": "5b41765ddb320b1116c96b583752b049",
+      "sourceName": "contracts/test.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Test"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC1363Receiver.sol": {
+      "lastModificationDate": 1648107435900,
+      "contentHash": "81d82b92e32be3906f750c8aa081eb09",
+      "sourceName": "contracts/util/contracts/interfaces/IERC1363Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1363Receiver"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC1363Spender.sol": {
+      "lastModificationDate": 1648107435901,
+      "contentHash": "59232bcd69ecd60f9fdc41e435eff762",
+      "sourceName": "contracts/util/contracts/interfaces/IERC1363Spender.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1363Spender"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\interfaces\\IERC1820Implementer.sol": {
+      "lastModificationDate": 1648107435902,
+      "contentHash": "b78ff1b7467f49381ceffd0e1c86b821",
+      "sourceName": "contracts/util/contracts/interfaces/IERC1820Implementer.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/IERC1820Implementer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\introspection\\IERC1820Implementer.sol": {
+      "lastModificationDate": 1648107435902,
+      "contentHash": "0612f1c8beee4b227de51b49174b9bc2",
+      "sourceName": "contracts/util/contracts/utils/introspection/IERC1820Implementer.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1820Implementer"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\introspection\\ERC1820Implementer.sol": {
+      "lastModificationDate": 1648107435856,
+      "contentHash": "267e2fa54d5923930fc121c178403487",
+      "sourceName": "contracts/util/contracts/utils/introspection/ERC1820Implementer.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1820Implementer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1820Implementer"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\proxy\\Clones.sol": {
+      "lastModificationDate": 1648107435830,
+      "contentHash": "f741efede98f234458f02f818f80c7f3",
+      "sourceName": "contracts/util/contracts/proxy/Clones.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Clones"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\security\\ReentrancyGuard.sol": {
+      "lastModificationDate": 1648107435928,
+      "contentHash": "92f9448b23a90ea3bb932ee55cc3ccce",
+      "sourceName": "contracts/util/contracts/security/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\Base64.sol": {
+      "lastModificationDate": 1648107435823,
+      "contentHash": "077d9664b0b4a2fd2033cea2663530f4",
+      "sourceName": "contracts/util/contracts/utils/Base64.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Base64"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\Create2.sol": {
+      "lastModificationDate": 1648107435833,
+      "contentHash": "1f0346d0da642d65cfb74f9241cc7683",
+      "sourceName": "contracts/util/contracts/utils/Create2.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Create2"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\cryptography\\MerkleProof.sol": {
+      "lastModificationDate": 1648107435921,
+      "contentHash": "b919f5fbfe0ab75cc71f2d361eac7f4b",
+      "sourceName": "contracts/util/contracts/utils/cryptography/MerkleProof.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MerkleProof"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\math\\SafeMath.sol": {
+      "lastModificationDate": 1648107435933,
+      "contentHash": "a6a9d6c1f662e922b82c1ba4d81cdd48",
+      "sourceName": "contracts/util/contracts/utils/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\math\\SignedMath.sol": {
+      "lastModificationDate": 1648107435935,
+      "contentHash": "226875d0edb508420f74e7a1c2786ad8",
+      "sourceName": "contracts/util/contracts/utils/math/SignedMath.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SignedMath"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\math\\SignedSafeMath.sol": {
+      "lastModificationDate": 1648107435935,
+      "contentHash": "f7b3809e202b5547e9ddd97aaeb1d907",
+      "sourceName": "contracts/util/contracts/utils/math/SignedSafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SignedSafeMath"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\contracts\\util\\contracts\\utils\\structs\\BitMaps.sol": {
+      "lastModificationDate": 1648107435828,
+      "contentHash": "a4862458388199138bffd4fa18f6c8ba",
+      "sourceName": "contracts/util/contracts/utils/structs/BitMaps.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BitMaps"
+      ]
+    },
+    "D:\\wnmp\\www\\lichang\\heyue\\diamonds-main\\service\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1648179021006,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "istanbul",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "evm.bytecode.object",
+                "evm.deployedBytecode.object",
+                "abi",
+                "evm.bytecode.sourceMap",
+                "evm.deployedBytecode.sourceMap",
+                "metadata",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    }
+  }
+}

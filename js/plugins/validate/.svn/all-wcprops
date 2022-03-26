@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/gentcent/!svn/ver/551/trunk/galaxy/WebRoot/js/plugins/validate
+END
+jquery.validate.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/gentcent/!svn/ver/551/trunk/galaxy/WebRoot/js/plugins/validate/jquery.validate.min.js
+END
+messages_zh.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/gentcent/!svn/ver/551/trunk/galaxy/WebRoot/js/plugins/validate/messages_zh.min.js
+END
+additional-methods.min.js
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/gentcent/!svn/ver/551/trunk/galaxy/WebRoot/js/plugins/validate/additional-methods.min.js
+END

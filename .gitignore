@@ -1,0 +1,5 @@
+service/node_modules/solc/node_modules/
+service/node_modules/
+service/hardhat.config.js
+service/artifacts/build-info/
+service/contracts/artifacts/build-info/
